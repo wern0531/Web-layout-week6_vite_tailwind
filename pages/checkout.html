@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>checkout</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <main class="border-y-2 border-y-primary pt-15">
+      <div class="container">
+        <div class="px-3">
+          <div class="mx-auto md:w-6/12">
+            <ol class="mb-6 md:mb-12 relative flex justify-between font-serif font-bold 
+            before:absolute before:top-4 before:md:top-6 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:mx-auto
+            before:w-10/12 before:h-px before:bg-primary">
+              <li class="z-10">
+                <p class="mb-2 m-auto flex items-center justify-center w-8 md:w-12 h-8 md:h-12 border border-primary bg-primary text-secondary md:text-xl">1</p>
+                <p>訂單確認</p>
+              </li>
+              <li class="z-10">
+                <p class="mb-2 m-auto flex items-center justify-center w-8 md:w-12 h-8 md:h-12 border border-primary bg-primary text-secondary md:text-xl">2</p>
+                <p>結帳付款</p>
+              </li>
+              <li class="z-10">
+                <p class="mb-2 m-auto flex items-center justify-center w-8 md:w-12 h-8 md:h-12 border border-primary bg-primary text-secondary md:text-xl">3</p>
+                <p>訂購結果</p>
+              </li>
+            </ol>
+            <h1 class="mb-6 md:mb-8 md:text-center font-serif font-bold text-32 md:text-5xl">返老還童-制服聯誼</h1>
+            <div class="mb-8 md:mb-12 border-t-2 border-primary">
+              <div class="py-2 flex items-center justify-between border-b border-primary">
+                <p class="font-serif font-bold">日期</p>
+                <p class="font-sans font-normal">2023/5/12</p>
+              </div>
+              <div class="py-2 flex items-center justify-between border-b border-primary">
+                <p class="font-serif font-bold">票種</p>
+                <p class="font-sans font-normal">改頭換面票（含大改造）</p>
+              </div>
+              <div class="py-2 flex items-center justify-between border-b border-primary">
+                <p class="font-serif font-bold">票價</p>
+                <p class="font-sans font-normal">$8000</p>
+              </div>
+            </div>
+            <div class="mb-4 flex flex-col items-center">
+              <img class="mb-4 w-8 h-8" src="../assets/images/sparkler.png" alt="">
+              <p class="font-serif font-bold text-2xl">聯絡人資料</p>
+            </div>
+            <form class="mb-6 md:mb-8 flex flex-col">
+              <label class="mb-2 font-sans font-normal" for="user-name">聯絡人姓名</label>
+              <input class="mb-4 py-2 px-4 border-2 bg-body font-sans font-normal text-xl" type="text" id="user-name" placeholder="請輸入聯絡人名稱">
+              <label class="mb-2 font-sans font-normal" for="user-mail">Email</label>
+              <input class="mb-4 py-2 px-4 border-2 bg-body font-sans font-normal text-xl" type="email" id="user-mail" placeholder="請輸入Email">
+              <label class="mb-2 font-sans font-normal" for="user-tel">手機</label>
+              <input class="mb-6 md:mb-8 py-2 px-4 border-2 bg-body font-sans font-normal text-xl" type="tel" id="user-tel" placeholder="請輸入手機號碼">
+              <button class="mb-4 mx-auto w-full md:w-8/12 py-2 bg-primary font-sans font-bold text-xl text-center text-white hover:text-secondary group" type="submit">
+                確認訂閱<i class="icofont-rounded-double-right group-hover:text-secondary:"></i></button>
+              <button class="font-sans font-normal text-lg">取消購票</button>
+              </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

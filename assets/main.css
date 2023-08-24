@@ -1,0 +1,39 @@
+@tailwind base;
+@layer base {
+  body {
+    @apply bg-body;
+  }
+}
+@tailwind components;
+@tailwind utilities;
+
+.header {
+  height: 40px;
+}
+.header .logo-img {
+  width: 40px;
+}
+.header input {
+  width: 168px;
+}
+@media (min-width: 768px) {
+  .header {
+    height: 55px;
+  }
+  .header .logo-img {
+    width: 53px;
+  }
+  .header input {
+    width: 280px;
+  }
+}
+
+.banner {
+  height: 350px;
+}
+@media (min-width: 768px) {
+  .banner {
+    height: 518px;
+  }
+}
+
